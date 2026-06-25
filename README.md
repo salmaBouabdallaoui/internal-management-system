@@ -85,8 +85,5 @@ Main tables used by the project:
 - `audit_logs`
 - `projects`
 
-## Notes
 
-- The application is designed for internal deployment in an intranet environment.
-- Sensitive configuration values should not be committed to GitHub in a public repository.
 
