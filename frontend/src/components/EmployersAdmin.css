@@ -1,0 +1,217 @@
+.employers-catalog-card {
+  margin-bottom: 24px;
+  padding: 20px;
+}
+
+.employers-detail-header-actions {
+  position: relative;
+}
+
+.employers-add-menu-wrap {
+  position: relative;
+}
+
+.employers-catalog-backdrop {
+  align-items: center;
+  background: rgba(10, 25, 16, 0.42);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 24px;
+  position: fixed;
+  z-index: 80;
+}
+
+.employers-catalog-modal {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 24px 48px rgba(11, 56, 31, 0.22);
+  max-height: min(88vh, 760px);
+  max-width: 720px;
+  overflow: auto;
+  padding: 22px;
+  width: 100%;
+}
+
+.employers-catalog-modal-header {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.employers-catalog-modal-header h2 {
+  color: #173322;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.employers-catalog-modal-header p {
+  color: #587061;
+  margin: 6px 0 0;
+}
+
+.employers-catalog-close {
+  align-items: center;
+  background: #edf4ef;
+  border: 0;
+  border-radius: 999px;
+  color: #173322;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 24px;
+  height: 34px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  width: 34px;
+}
+
+.employers-add-trigger {
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(15, 106, 61, 0.18);
+  flex: 0 0 auto;
+  display: inline-flex;
+  font-size: 26px;
+  height: 42px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  width: 42px;
+}
+
+.employers-add-menu {
+  background: #ffffff;
+  border: 1px solid #deebe1;
+  border-radius: 12px;
+  box-shadow: 0 18px 36px rgba(11, 56, 31, 0.16);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 220px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  z-index: 20;
+}
+
+.employers-add-menu-item {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 10px;
+  color: #173322;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  justify-content: flex-start;
+  min-height: 42px;
+  padding: 10px 12px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.employers-add-menu-item:hover,
+.employers-add-menu-item:focus-visible {
+  background: #f2f7f3;
+  outline: none;
+}
+
+.employers-catalog-card h3 {
+  color: #173322;
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+
+.employers-catalog-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.employers-catalog-form {
+  padding: 16px;
+}
+
+.employers-catalog-form .event-form-actions {
+  margin-top: 10px;
+}
+
+.employers-catalog-existing {
+  border-top: 1px solid #deebe1;
+  margin-top: 18px;
+  padding-top: 18px;
+}
+
+.employers-catalog-existing-column strong {
+  color: #173322;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.employers-catalog-existing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.employers-catalog-existing-item {
+  align-items: center;
+  background: #f7fbf8;
+  border: 1px solid #deebe1;
+  border-radius: 10px;
+  color: #173322;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  padding: 8px 10px 8px 12px;
+}
+
+.employers-catalog-delete-button {
+  align-items: center;
+  background: #eef4ef;
+  border: 0;
+  border-radius: 999px;
+  color: #8a1f1f;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 18px;
+  height: 24px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  width: 24px;
+}
+
+.employers-catalog-delete-button:hover,
+.employers-catalog-delete-button:focus-visible {
+  background: #f7e7e7;
+  outline: none;
+}
+
+@media (max-width: 860px) {
+  .employers-add-menu {
+    min-width: 200px;
+  }
+
+  .employers-catalog-backdrop {
+    padding: 14px;
+  }
+
+  .employers-catalog-modal {
+    max-height: 92vh;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 820px) {
+  .employers-add-menu-wrap {
+    align-self: flex-end;
+  }
+}

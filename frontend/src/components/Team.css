@@ -1,0 +1,61 @@
+.team-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.team-card {
+  padding: 20px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.team-item {
+  align-items: center;
+  background: #f7fbf8;
+  border: 1px solid #deebe1;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+}
+
+.team-item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.team-item-main strong {
+  color: #173322;
+  font-size: 15px;
+}
+
+.team-item-main span,
+.team-item-meta span {
+  color: #587061;
+  font-size: 13px;
+}
+
+.team-item-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+@media (max-width: 720px) {
+  .team-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .team-item-meta {
+    text-align: left;
+  }
+}

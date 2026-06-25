@@ -1,0 +1,164 @@
+.App {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1d2a3a;
+}
+
+.page-header {
+  background: #1d4b8f;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.page-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.page-nav a,
+.page-nav button {
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.35rem;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.page-nav a:hover,
+.page-nav button:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.9);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: #f8fbff;
+  border: 1px solid #dce7f4;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group button {
+  font: inherit;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #c6d4e8;
+  border-radius: 0.6rem;
+  padding: 0.75rem 0.85rem;
+  background: #fdfdff;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.button-primary,
+.button-secondary {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.85rem 1.25rem;
+  font-weight: 700;
+}
+
+.button-primary {
+  background: #1d4b8f;
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  background: #163f78;
+}
+
+.button-secondary {
+  background: #e5edf7;
+  color: #1d2a3a;
+}
+
+ul.simple-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+ul.simple-list li {
+  background: #ffffff;
+  border: 1px solid #e6eef7;
+  border-radius: 0.85rem;
+  padding: 0.9rem 1rem;
+}
+
+.login-shell,
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #e9f0fb 0%, #f9fbff 100%);
+}
+
+.login-panel {
+  width: min(420px, 95vw);
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(17, 50, 90, 0.12);
+}
+
+.login-panel h2,
+.panel h2,
+.panel h3 {
+  margin-top: 0;
+}
+
+.login-panel button,
+.panel button {
+  width: fit-content;
+}

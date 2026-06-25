@@ -1,0 +1,35 @@
+.portal-footer {
+  background: transparent;
+  border-top: none;
+  margin-top: auto;
+  padding: 16px 20px 18px;
+}
+
+.portal-footer-inner {
+  align-items: center;
+  color: #547061;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1040px;
+  text-align: center;
+}
+
+.portal-footer-inner p {
+  margin: 0;
+}
+
+.portal-footer-title {
+  color: #173322;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.portal-footer-copy,
+.portal-footer-contact {
+  font-size: 12px;
+  line-height: 1.45;
+}

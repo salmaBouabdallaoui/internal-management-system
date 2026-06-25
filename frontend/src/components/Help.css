@@ -1,0 +1,265 @@
+.help-page {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.help-content {
+  flex: 1;
+  padding: 32px 48px 40px;
+}
+
+.help-hero {
+  align-items: stretch;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.8fr);
+}
+
+.help-hero-copy,
+.help-hero-panel,
+.help-section,
+.help-support-card {
+  background: #ffffff;
+  border: 1px solid #dfe8e1;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(11, 56, 31, 0.08);
+}
+
+.help-hero-copy {
+  padding: 24px;
+}
+
+.help-kicker {
+  color: #587061;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.help-hero h1 {
+  color: #173322;
+  font-size: 32px;
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+
+.help-hero-copy p {
+  color: #587061;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 68ch;
+}
+
+.help-hero-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+}
+
+.help-hero-panel span,
+.help-support-card span {
+  color: #587061;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.help-hero-panel strong,
+.help-support-card strong {
+  color: #173322;
+  font-size: 20px;
+}
+
+.help-hero-panel p,
+.help-support-card p,
+.help-section-head p {
+  color: #587061;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.help-ticket-button,
+.help-secondary-button {
+  align-items: center;
+  background: #173322;
+  border: 1px solid #173322;
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 16px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.help-ticket-button:hover,
+.help-secondary-button:hover {
+  background: #214530;
+  border-color: #214530;
+}
+
+.help-section {
+  margin-top: 18px;
+  padding: 22px 24px;
+}
+
+.help-section-head {
+  margin-bottom: 18px;
+}
+
+.help-section-head h2 {
+  color: #173322;
+  font-size: 22px;
+  margin: 0 0 6px;
+}
+
+.help-workflow {
+  align-items: center;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.help-workflow-step {
+  align-items: flex-start;
+  background: #f7fbf8;
+  border: 1px solid #dfe8e1;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  min-height: 100px;
+  padding: 14px 16px;
+}
+
+.help-workflow-step strong {
+  color: #173322;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.help-workflow-step p {
+  color: #587061;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.help-workflow-index {
+  align-items: center;
+  background: #173322;
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  flex: 0 0 28px;
+  height: 28px;
+  justify-content: center;
+  width: 28px;
+}
+
+.help-workflow-arrow {
+  color: #587061;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.help-special-rule {
+  background: #edf6ef;
+  border-left: 4px solid #2b6b45;
+  border-radius: 8px;
+  margin-top: 18px;
+  padding: 14px 16px;
+}
+
+.help-special-rule strong {
+  color: #173322;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.help-special-rule p {
+  color: #40614d;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.help-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.help-faq-item {
+  background: #f7fbf8;
+  border: 1px solid #dfe8e1;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.help-faq-item summary {
+  color: #173322;
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+
+.help-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.help-faq-item p {
+  color: #587061;
+  line-height: 1.6;
+  margin: 10px 0 0;
+}
+
+.help-support-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.help-support-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+}
+
+.help-support-card strong {
+  font-size: 18px;
+}
+
+.help-secondary-button {
+  margin-top: 4px;
+}
+
+@media (max-width: 960px) {
+  .help-content {
+    padding: 24px 20px 32px;
+  }
+
+  .help-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .help-workflow {
+    grid-template-columns: 1fr;
+  }
+
+  .help-workflow-arrow {
+    justify-self: center;
+    transform: rotate(90deg);
+  }
+
+  .help-support-grid {
+    grid-template-columns: 1fr;
+  }
+}
